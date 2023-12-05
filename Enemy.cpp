@@ -11,7 +11,6 @@ void Enemy::battle(Enemy& enemy1, Enemy& enemy2) {
 		enemy1.play(enemy2);
 
 		enemy2.play(enemy1);
-		cout << enemy1._hp << ":" << enemy2._hp << endl;
 	} while (enemy1._hp > 0 && enemy2._hp > 0);
 	cout << "＝＝＝＝＝＝＝＝勝者＝＝＝＝＝＝＝" << endl;
 	cout << "人人人人人人人人人人人人人人人人人" << endl;
@@ -39,9 +38,9 @@ void Enemy::damage(int damage)
 
 void Enemy::play(Enemy& enemy)
 {
-	cout << "＝＝＝＝＝＝ターン開始＝＝＝＝" << endl;
+	cout << "＝＝＝＝＝＝ターン開始＝＝＝＝＝＝" << endl;
 
 	playBase(enemy);
 
-	cout << "＝＝＝＝＝＝ターン終了＝＝＝＝" << endl;
+	cout << "＝＝＝＝＝＝ターン終了＝＝＝＝＝＝" << endl;
 }
